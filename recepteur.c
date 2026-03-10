@@ -19,7 +19,7 @@ void print_time() {
 // Fonction qui sera très souvent utilisé pour quitter le programme et afficher l'erreur correspondante
 void FATAL(char * message) {
     print_time();
-    printf("\nERREUR] Problème réseau : %s\n", message);
+    printf("[ERREUR] Problème réseau : %s\n", message);
     perror("Détail système");
     exit(1);
 }
